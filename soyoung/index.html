@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.soyoung.com/html/out_young -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>不一Young演唱会</title>
+    <link rel="stylesheet" href="./Content/onepage-scroll.css">
+    <link rel="stylesheet" href="./Content/young.css">
+    <style>
+        .page0 { background-color: #461c73;}
+        .page1 { background-color: #461c73; }
+        .page2 { background-color: #461c73;}
+        .page3 { background-color: #461c73;}
+        .page4 { background-color: #461c73;}
+        .page5 { background-color: #461c73;}
+        .page6 { background-color: #461c73;}
+        .page7 { background-color: #461c73;}
+        p.title { position: relative; top: 35%; font: 700 40px "Microsoft Yahei"; color: #fff; text-align: center;}
+
+        .loading { background: url(http://cdn.dowebok.com/120/loading.gif) 50% no-repeat;}
+        .loading .main { opacity: 0; opacity: 0;}
+        .show{display: none}
+
+        video{
+            mini-width:100%;
+            mini-height:100%;
+            width:100%;
+            height:auto;
+            right:0;
+            bottom:0;
+            position:fixed;
+            z-index:-9999;
+        }
+
+        .text{
+            font-size:xx-large;
+            width:250px;
+            height:50px;
+            margin: 20% auto;
+            color:#fff;
+        }
+        body{
+
+            margin:0;
+        }
+    </style>
+    <script src="./Content/jquery-1.9.0.min.js"></script>
+    <script src="./Content/jquery.onepage-scroll.min.js"></script>
+    <script>
+        $(function(){
+            $('.main').onepage_scroll({
+                sectionContainer: '.page'
+            });
+        });
+
+        function detectmob() {
+            if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        if (detectmob()) {
+            window.location = "http://x.eqxiu.com/s/Cs16s05e?eqrcode=1&from=timeline&isappinstalled=0";
+        }
+
+
+    </script>
+
+
+
+    <script>
+        $(function(){
+            $('.main').onepage_scroll({
+                sectionContainer: '.page',
+                updateUrl:false,
+                afterMove: function(index){
+                    switch(index){
+                        case 1:
+                            $(".p1").fadeIn(1300);
+                            $(".p2").fadeOut(800);
+                            $(".p3").fadeOut(800);
+                            $(".p4").fadeOut(800);
+                            $(".p5").fadeOut(800);
+                            $(".p6,.p7").fadeOut(800);
+                            window.setTimeout(function(){
+                                $('body').removeClass('loading');
+                                $('#img1').fadeIn(1600);
+                            }, 100);
+                            window.setTimeout(function(){
+                                $('#img2').fadeIn(1600);
+                            }, 900);
+                            window.setTimeout(function(){
+                                $('#img3').fadeIn(1600);
+                            }, 1800);
+
+                            break;
+                        case 2:
+                            $(".p2").fadeIn(1300);
+                            $(".p1").fadeOut(800);
+                            $(".p3").fadeOut(800);
+                            $(".p4").fadeOut(800);
+                            $(".p5").fadeOut(800);
+                            $(".p6,.p7").fadeOut(800);
+                            window.setTimeout(function(){
+                                $('body').removeClass('loading');
+                                $('#img1').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function(){
+                                $('#img2').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function(){
+                                $('#img3').fadeOut(1);
+                            }, 1);
+                            break;
+                        case 3:
+                            $(".p3").fadeIn(1300);
+                            $(".p2").fadeOut(800);
+                            $(".p1").fadeOut(800);
+                            $(".p4").fadeOut(800);
+                            $(".p5").fadeOut(800);
+                            $(".p6,.p7").fadeOut(800);
+                            window.setTimeout(function(){
+                                $('body').removeClass('loading');
+                                $('#img1').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function(){
+                                $('#img2').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function(){
+                                $('#img3').fadeOut(1);
+                            }, 1);
+                            break;
+                        case 4:
+                            $(".p4").fadeIn(1300);
+                            $(".p2").fadeOut(800);
+                            $(".p3").fadeOut(800);
+                            $(".p1").fadeOut(800);
+                            $(".p5").fadeOut(800);
+                            $(".p6,.p7").fadeOut(800);
+                            window.setTimeout(function(){
+                                $('body').removeClass('loading');
+                                $('#img1').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function(){
+                                $('#img2').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function(){
+                                $('#img3').fadeOut(1);
+                            }, 1);
+                            break;
+                        case 5:
+                            $(".p5").fadeIn(1300);
+                            $(".p2").fadeOut(800);
+                            $(".p3").fadeOut(800);
+                            $(".p4").fadeOut(800);
+                            $(".p1").fadeOut(800);
+                            $(".p6,.p7").fadeOut(800);
+                            window.setTimeout(function(){
+                                $('body').removeClass('loading');
+                                $('#img1').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function(){
+                                $('#img2').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function(){
+                                $('#img3').fadeOut(1);
+                            }, 1);
+                            break;
+
+                        case 6:
+                            $(".p7").fadeIn(1300);
+                            $(".p6").fadeOut(800);
+                            $(".p2").fadeOut(800);
+                            $(".p3").fadeOut(800);
+                            $(".p4").fadeOut(800);
+                            $(".p5").fadeOut(800);
+                            $(".p1").fadeOut(800);
+                            window.setTimeout(function () {
+                                $('body').removeClass('loading');
+                                $('#img1').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function () {
+                                $('#img2').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function () {
+                                $('#img3').fadeOut(1);
+                            }, 1);
+                            break;
+
+                        case 7:
+                            $(".p6").fadeIn(1300);
+                            $(".p7").fadeOut(800);
+                            $(".p2").fadeOut(800);
+                            $(".p3").fadeOut(800);
+                            $(".p4").fadeOut(800);
+                            $(".p5").fadeOut(800);
+                            $(".p1").fadeOut(800);
+                            window.setTimeout(function(){
+                                $('body').removeClass('loading');
+                                $('#img1').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function(){
+                                $('#img2').fadeOut(1);
+                            }, 1);
+                            window.setTimeout(function(){
+                                $('#img3').fadeOut(1);
+                            }, 1);
+                            break;
+                    }
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body class="viewing-page-1" style="zoom: 1;">
+    
+    <div style="position:fixed;top:40%;left:10px;z-index:1000;"><img src="./Content/2q.png"></div>
+    <div class="main onepage-wrapper" style="position: relative;">
+        <div class="page page1 section" data-index="1" style="position: absolute; top: 0%; left: 0px;">
+            <!--	<div class="text">HELLO WORLD</div>
+                    <video loop autoplay style=“width:100% height=100%”>
+            <source src="http://bkwld.com/video/home/ClifV2.webm"/>
+            <source src="http://bkwld.com/video/home/ClifV2.mp4"/>
+            </video>-->
+            <img src="./Content/p1.png" class="img" id="img1" style="top: 0px; left: 0px; width: 100%; display: inline;">
+        </div>
+        <div class="page page2 section" data-index="2" style="position: absolute; top: 100%; left: 0px;">
+            <div></div>
+            <div class="p2"><img src="./Content/p2.png" class="img"></div>
+        </div>
+        <div class="page page3 section" data-index="3" style="position: absolute; top: 200%; left: 0px;">
+            <div class="p3"><img src="./Content/p3.png" class="img"></div>
+        </div>
+        <div class="page page4 section" data-index="4" style="position: absolute; top: 300%; left: 0px;">
+            <div class="p4"><img src="./Content/p4.png" class="img"></div>
+        </div>
+
+        <div class="page page5 section" data-index="5" style="position: absolute; top: 400%; left: 0px;">
+            <div class="p5">
+                <div id="s1" style="display:none"><img src="./Content/s1.png" class="img"></div>
+                <div id="s2"><img src="./Content/s2.png" class="img"></div>
+                <div id="s3" style="display:none"><img src="./Content/s3.png" class="img"></div>
+                <div id="s4" style="display:none"><img src="./Content/s4.png" class="img"></div>
+                <div id="s5" style="display:none"><img src="./Content/s5.png" class="img"></div>
+                <div class="tab-menu">
+
+                    <ul>
+                        <li class="tab1"><a class="hvr-wobble-horizontal"><em></em><i></i></a></li>
+                        <li class="tab2"><a onclick="switch_pic(2)" class="hvr-wobble-horizontal"><em></em><i></i></a></li>
+                        <li class="tab3"><a onclick="switch_pic(3)" class="hvr-wobble-horizontal cur"><em></em><i></i></a></li>
+                        <li class="tab4"><a class="hvr-wobble-horizontal"><em></em><i></i></a></li>
+                        <li class="tab5"><a class="hvr-wobble-horizontal"><em></em><i></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="page page6 section">
+            <style>
+                .video_container {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                }
+
+                .video_backgound {
+                    width: 70%;
+                    position: absolute;
+                    left: 15%;
+                    top: 10%;
+                }
+
+                    .video_backgound img {
+                        width: 100%;
+                    }
+
+                .video {
+                    position: absolute;
+                    top: 11%;
+                    left: 28%;
+                    width: 44%;
+                    text-align: center;
+                }
+
+                .video_wapper {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+
+                    .video_wapper div {
+                        background-image: url(Content/video_item_background.png);
+                        background-size: 100% 100%;
+                        background-position: center;
+                        height: 131px;
+                        width: 206px;
+                        display: inline-block;
+                    }
+
+                        .video_wapper div img {
+                            height: 111px;
+                            width: 186px;
+                            margin: 10px;
+                        }
+            </style>
+            <div class="p7 video_container">
+                <div class="video_backgound">
+                    <img src="Content/video_background.png" />
+
+                    <div class="video_wapper">
+                        <div>
+                            <a href="javascript:void(0)" data-url="http://video.weibo.com/player/1034:88cc23e2837536fa36d892a09d61cf55/v.swf">
+                                <img src="Content/video_item1.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <embed type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" quality="high" height="400" width="560" />
+                </div>
+
+                <script type="text/javascript">
+                    $(function () {
+                        
+                        //http://video.weibo.com/player/1034:88cc23e2837536fa36d892a09d61cf55/v.swf
+                        //$(".video embed").attr("src", "http://video.weibo.com/player/1034:88cc23e2837536fa36d892a09d61cf55/v.swf");
+
+                        $(".video_wapper div a").click(function () {
+                            
+                            var top = 10 + (150 * (document.body.clientWidth * 0.7 / 1242) / document.body.clientHeight * 100);
+                            var width = document.body.clientWidth * 0.44;
+                            var height = width / 804 * 406;
+                            $(".video").css("top", top + "%");
+                            //$(".video embed").attr("height", height);
+                            //$(".video embed").attr("width", width);
+
+                            $('.video embed').remove();
+                            var str = '<embed src="' + $(this).attr("data-url") + '" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" quality="high" height="' + height + '" width="' + width + '" />';
+                            $('.video').html(str);
+
+
+                            //$(".video embed").attr("src", $(this).attr("data-url"));
+                            //$(".video embed").hide();
+                            //$(".video embed").show();
+                        });
+
+                    })
+                </script>
+            </div>
+        </div>
+        <div class="page page7 section" data-index="6" style="position: absolute; top: 500%; left: 0px;">
+            <div class="p6"> <!--<div class="btn"><a class="downbtn" href="#"></a></div>--><img src="./Content/p6.png" class="img"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+
+
+        $(document).ready(function () {
+            var $window = $(window);
+            var $wh = $window.height();
+            var $body = $('body');
+            var $main = $('.main');
+
+            $(window).load(function () {
+                window.setTimeout(function () {
+                    $('body').removeClass('loading');
+                    $('#img1').fadeIn(1600);
+                }, 800);
+                window.setTimeout(function () {
+                    $('#img2').fadeIn(1600);
+                }, 1800);
+                window.setTimeout(function () {
+                    $('#img3').fadeIn(1600);
+                }, 2800);
+
+
+
+            });
+
+
+            /* $(".tab1").click(function(){
+             $("#s1").fadeIn(800);
+
+             $("#s2").fadeOut(800);
+             $("#s3").fadeOut(800);
+             $("#s4").fadeOut(800);
+             $("#s5").fadeOut(800);
+
+
+             });*/
+            $(".tab2").click(function () {
+                $("#s2").fadeIn(800);
+                $("#s1").fadeOut(800);
+                $("#s3").fadeOut(800);
+                $("#s4").fadeOut(800);
+                $("#s5").fadeOut(800);
+
+            });
+
+            $(".tab3").click(function () {
+                $("#s3").fadeIn(800);
+                $("#s1").fadeOut(800);
+                $("#s2").fadeOut(800);
+                $("#s4").fadeOut(800);
+                $("#s5").fadeOut(800);
+            });
+
+            /*
+             $(".tab4").click(function(){
+             $("#s4").fadeIn(800);
+             $("#s1").fadeOut(800);
+             $("#s2").fadeOut(800);
+             $("#s3").fadeOut(800);
+             $("#s5").fadeOut(800);
+
+             });
+             $(".tab5").click(function(){
+             $("#s5").fadeIn(800);
+             $("#s1").fadeOut(800);
+             $("#s2").fadeOut(800);
+             $("#s3").fadeOut(800);
+             $("#s4").fadeOut(800);
+
+             });*/
+        });
+
+    </script>
+
+</body></html>
